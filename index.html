@@ -9,45 +9,61 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>Test Your Stress Level </h1>
       <h2>Check the boxes that apply to you</h2>
+      </div>
       <form id= "stress-form">
         <div class="form-group">
           <p>List Any Warning Signs your Having.</p>
-          <input type="checkbox" name="symptom" value="sign1">Loss Of Sleep<br>
-          <input type="checkbox" name="symptom" value="sign2">Insomnia<br>
-          <input type="checkbox" name="symptom" value="sign3">Anxiety<br>
-          <input type="checkbox" name="symptom" value="sign4">Fatigue<br>
-          <input type="checkbox" name="symptom" value="sign5">Headache<br>
-          <input type="checkbox" name="symptom" value="sign6">Panic Attack<br>
+          <input type="checkbox" name="sign" value="Loss Of Sleep">Loss Of Sleep<br>
+          <input type="checkbox" name="sign" value="Insomnia">Insomnia<br>
+          <input type="checkbox" name="sign" value="Anxiety">Anxiety<br>
+          <input type="checkbox" name="sign" value="Fatigue">Fatigue<br>
+          <input type="checkbox" name="sign" value="Headache">Headache<br>
+          <input type="checkbox" name="sign" value="Panic Attack">Panic Attack<br>
         </div>
+
         <div class="form-group">
           <p>List Any Health Symptoms your having.</p>
-          <input type="checkbox" name="symptom" value="symptom1">Chest Pain<br>
-          <input type="checkbox" name="symptom" value="symptom2">Rapid Heart Beat<br>
-          <input type="checkbox" name="symptom" value="symptom3">Hair Loss<br>
-          <input type="checkbox" name="symptom" value="symptom4">Diarrhea<br>
-          <input type="checkbox" name="symptom" value="symptom5">Upset Stomach<br>
-          <input type="checkbox" name="symptom" value="symptom6">Frequent Infections<br>
+          <input type="checkbox" name="symptom" value="Chest Pain">Chest Pain<br>
+          <input type="checkbox" name="symptom" value="Rapid Heart Beat">Rapid Heart Beat<br>
+          <input type="checkbox" name="symptom" value="Hair Loss">Hair Loss<br>
+          <input type="checkbox" name="symptom" value="Diarrhea">Diarrhea<br>
+          <input type="checkbox" name="symptom" value="Upset Stomach">Upset Stomach<br>
+          <input type="checkbox" name="symptom" value="Frequent Infections">Frequent Infections<br>
         </div>
+
         <div class="form-group">
           <p>List Any Health Symptoms your having.</p>
-          <input type="checkbox" name="symptom" value="manage1">Exercise<br>
-          <input type="checkbox" name="symptom" value="manage2">Healthy Eating<br>
-          <input type="checkbox" name="symptom" value="manage3">Sleep Longer<br>
-          <input type="checkbox" name="symptom" value="manage4">Time away from screens<br>
-          <input type="checkbox" name="symptom" value="manage5">Less Work<br>
-          <input type="checkbox" name="symptom" value="manage6">Meditation<br>
+          <input type="checkbox" name="manage" value="Exercise">Exercise<br>
+          <input type="checkbox" name="manage" value="Healthy Eating">Healthy Eating<br>
+          <input type="checkbox" name="manage" value="Sleep Longer">Sleep Longer<br>
+          <input type="checkbox" name="manage" value="Time away from screens">Time away from screens<br>
+          <input type="checkbox" name="manage" value="Less Work">Less Work<br>
+          <input type="checkbox" name="manage" value="Meditation">Meditation<br>
         </div>
         <button type="submit" class="btn">Submit</button>
-
-
-
-
-
-
-
       </form>
+
+      <div id="results" class="jumbotron">
+      <span id="sign-responses">
+        <p><b>You currently notice the following warning signs:</b></p>
+      </span><br>
+      <span id="symptom-responses">
+        <p><b>You currently notice the following health symptoms:</b></p>
+      </span><br>
+      <span id="manage-responses">
+        <p><b>You currently manage these signs &amp; symptoms with:</b></p>
+      </span><br>
+      <span id="recommend1">
+        <p><b>You have stress and are not taking enough action to manage these symptoms. Consider seeing a doctor.</b></p>
+      </span><br>
+      <span id="recommend2">
+        <p><b>You may have stress but you are doing a good job managing it. If symptoms worsen or persist, please check again or see a doctor if needed. Good job! 👌</b></p>
+      </span>
+    </div>
+
     </div>
   </body>
 </html>

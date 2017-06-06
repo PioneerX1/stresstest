@@ -3,11 +3,14 @@ $(document).ready(function() {
     event.preventDefault();
     $("#recommend1").hide();
     $("#recommend2").hide();
+    $("#recommend3").hide();
 
     var sign = 0;
     var symptom = 0;
     var manage = 0;
     var issues;
+
+    //alert('got to if statements');
 
     $("#results").show();
     //$("#sign-responses").show();
@@ -31,14 +34,12 @@ $(document).ready(function() {
 
     issues = sign + (2*symptom);
     //alert(sign + " " + symptom + " " + manage + " " + issues);
-    if (manage/issues < 0.25) {
+    if (manage/issues < 0.4 && manage/issues > 0.2) {
       $("#recommend1").show();
-      //alert("Please see a doctor and do more to manage symptoms");
-    } else {
+    } else if (manage/issues >= 0.4) {
       $("#recommend2").show();
-      //alert("Good job managing stress, keep it up, and come back if signs or symptoms increase");
+    } else {
+      $("#recommend3").show();
     }
-
-
   });
 });
